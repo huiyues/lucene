@@ -62,5 +62,7 @@ public class SearchIndex {
         Query query = queryParser.parse("Lucene是Java的开始");
 
         printResult(query);
+
+        System.out.println("这是一个测试分支的另一个语句..............");
     }
 }
