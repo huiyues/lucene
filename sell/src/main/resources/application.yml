@@ -1,0 +1,23 @@
+server:
+  port: 80
+  servlet:
+    context-path: /sell
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.25.128/sell?characterEncoding=utf-8&useSSl=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+---
+spring:
+  freemarker:
+    cache: false
+  redis:
+    host: 192.168.25.128
+    port: 6379
+    password:
+

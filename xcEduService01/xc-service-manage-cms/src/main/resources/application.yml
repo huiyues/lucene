@@ -1,0 +1,12 @@
+server:
+  port: 31001
+---
+spring:
+  application:
+    name: xc-service-mange-cms
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017
+      database: xc_cms
+  freemarker:
+    cache: false   #页面不加载缓存，实时更新
